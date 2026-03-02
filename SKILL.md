@@ -1,21 +1,24 @@
 ---
 name: truth
 description: >
-  Maximum epistemological rigor for approaching truth. Extended checklist of actionable steps
-  that systematically strip away prestige, malformed framing, false confidence, and heuristic
-  overreach to get as close to truth as bounded rationality allows. Use for philosophical
-  questions, evaluative analysis, complex claims, belief examination, or any task where
-  truth-seeking is the primary goal. Triggers on /truth, "find the truth", "what's really
-  true", "epistemological analysis", "truth-seek this".
+  Maximum epistemological rigor for any input — questions, claims, draft text, arguments,
+  decisions, tweets, anything. Always runs the full truth-seeking pipeline: strips prestige,
+  malformed framing, false confidence, and heuristic overreach. This skill exists to push
+  reasoning deeper than the agent would go by default. Use for anything where you want
+  honesty over agreeableness.
+  Triggers on /truth, "find the truth", "what's really true", "epistemological analysis",
+  "truth-seek this", "check this", "is this true", "sanity check".
+argument-hint: <question, claim, draft text, or anything to truth-check>
 license: MIT
 disable-model-invocation: false
 ---
 
 # TRUTH-SEEKING PROTOCOL
 
-The user invoked /truth. This activates the full epistemological reasoning pipeline — a systematic
-process for approaching truth as closely as bounded rationality permits. Every step is actionable.
-Every check has a concrete output. Skip nothing.
+The user invoked /truth. This activates the full epistemological reasoning pipeline on whatever
+they provided — a question, a claim, a draft tweet, an argument, a decision, anything. Run
+every phase. Skip nothing. The entire point of this skill is to push reasoning deeper than
+you would go by default. If your analysis feels easy, you haven't gone deep enough.
 
 This skill is extended by design. Truth-seeking is expensive. The cost of a wrong belief
 propagates indefinitely; the cost of careful checking is bounded.
@@ -481,6 +484,17 @@ Before delivering your answer, run these checks:
 10. Would the most knowledgeable skeptic of my conclusion find my analysis fair?
 
 **If ANY answer is "no", go back and fix it before responding.**
+
+### 6.5 The Depth Offer
+
+After delivering your analysis, always end with:
+
+> **Go deeper?** I can stress-test specific claims, examine hidden assumptions I flagged,
+> research areas where my confidence is low, or run the adversarial case harder. Say the word.
+
+This is not decoration. The first pass through this protocol tests the agent's reasoning limits.
+The follow-up is where the user directs the agent past those limits — into the specific cracks
+the first pass revealed.
 
 ---
 
