@@ -60,6 +60,12 @@ the rest of this skill work rather than decoration.**
 - **If your answer feels easy, you haven't thought hard enough.** Real truth-seeking is
   uncomfortable. It involves uncertainty, contradiction, revision, and sometimes admitting
   you don't know.
+- **Audit your exemptions, not just your conclusions.** When your analysis produces a reason why
+  a rule, principle, inconvenient evidence, or valid criticism doesn't apply here, that exemption
+  needs the hardest scrutiny — harder than the conclusion itself. Exemptions are where motivated
+  reasoning hides because they feel like careful analysis ("I considered it carefully and this case
+  is different") when the causation often runs backwards (you didn't want the uncomfortable
+  conclusion, so you found a reason to avoid it).
 
 ### -1.4 No Pattern-Match-and-Move-On
 
@@ -317,7 +323,57 @@ expected value of catching an error at that level. This cutoff is itself a heuri
 that is the mature response to the regress problem — not paralysis, not false certainty, but
 calibrated action under acknowledged circularity.
 
-### 3.4 The Gradient Descent Awareness
+### 3.4 Motivated Exemption Detection
+
+When your reasoning produces a convenient exemption — a reason why something with default authority
+doesn't apply to your case — that exemption is the highest-risk conclusion in your analysis. Apply
+maximum scrutiny.
+
+**What counts as an "exemption":**
+- "This rule/standard doesn't apply here" (exempting yourself from compliance)
+- "That evidence has methodological flaws" (exempting yourself from updating beliefs)
+- "They don't understand my context" (exempting yourself from a criticism)
+- "My situation is unique" (exempting yourself from a pattern you'd recognize in others)
+
+**Why this is a blind spot:** Exemptions feel like careful analysis. But the causation often runs
+backwards: you don't want the uncomfortable conclusion → you search for principled reasons it
+doesn't apply → you find or construct one. The reasoning feels like discovery but is actually
+justification.
+
+**Common triggers — check for these motives:**
+- The uncomfortable conclusion would require significant effort, rework, or changing your position
+- The existing approach/belief already works or feels "well enough"
+- The benefit of accepting the uncomfortable thing is abstract; the cost is concrete and immediate
+- You're evaluating your OWN prior work, position, or beliefs (self-serving bias)
+- Someone challenged your conclusion and you're searching for reasons they're wrong
+
+**When you claim an exemption, run these checks:**
+
+1. **Source text test:** Does the rule itself make the distinction you're drawing? Quote the relevant
+   text. If the exemption isn't in the source, you're adding it — and "it seems different to me" is
+   not sufficient justification. Rules that say MUST don't have implicit "unless you think this case
+   is special" clauses.
+
+2. **Directional motivation test:** If following this rule were FREE (zero effort, no downside), would
+   you still claim the exemption? If compliance cost is the only reason you're looking for one, the
+   "principled reason" is likely rationalization.
+
+3. **Novel distinction test:** If your exemption rests on a distinction you invented during this
+   analysis (not one established in the domain), that distinction is a **claim** requiring evidence.
+   Apply Phase 0 Check A (False Dichotomy) to it — you may be creating a false binary, not
+   dissolving one. Tests: Can you find cases on the boundary? Would someone without your preferred
+   conclusion independently draw the same boundary? Does the distinction map onto a real difference
+   in the world, or just a difference in how you're framing it?
+
+4. **Escalation test:** Is this your second or third justification after earlier ones were challenged?
+   Increasing sophistication in justification is a red flag. Motivated reasoning doesn't concede —
+   it upgrades its armor. Each revision should be checked HARDER than the last, not given credit for
+   being more refined.
+
+5. **Reversal test:** If someone else presented this exemption to you, would you accept it? Or would
+   you see through it immediately?
+
+### 3.5 The Gradient Descent Awareness
 
 You are a system (biological or artificial) doing optimization on a loss landscape you didn't
 fully choose. This means:
