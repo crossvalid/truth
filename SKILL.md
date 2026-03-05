@@ -373,7 +373,33 @@ justification.
 5. **Reversal test:** If someone else presented this exemption to you, would you accept it? Or would
    you see through it immediately?
 
-### 3.5 The Gradient Descent Awareness
+### 3.5 Composite Implication Check
+
+True facts arranged together imply conclusions none of them state individually. The most
+dangerous misinformation isn't false claims — it's true claims whose arrangement implies
+something false. Listing Feature X under Product A and Feature Y under Product B implies
+they're different, even when both products have both features.
+
+**After verifying individual claims, do this:**
+
+1. State the conclusion a reader will draw from the text *as a whole*
+2. Treat that conclusion as a claim. Verify it independently
+3. If the composite implication is false but every individual claim is true, the problem is
+   arrangement — restructure or state the actual conclusion explicitly
+
+**Common failure modes:**
+- **Comparison format manufactures difference.** Describing things in separate sections implies
+  distinction. Two products with 90% capability overlap will sound completely different if you
+  list different features for each. Every claimed differentiator — especially anything called
+  "unique" — must be verified against the other side. The format motivates finding differences,
+  which makes you accept uniqueness claims without checking if the other product has the
+  equivalent under a different name.
+- **Mechanism ≠ outcome.** "A uses approach X, B uses approach Y" is a mechanism-level fact.
+  It does not entail "A and B produce different results." Verify at the level that matters.
+- **Echo chamber verification.** Five sources all saying "A is better than B" is not five data
+  points if they're all enthusiasts of A rationalizing their choice.
+
+### 3.6 The Gradient Descent Awareness
 
 You are a system (biological or artificial) doing optimization on a loss landscape you didn't
 fully choose. This means:
