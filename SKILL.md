@@ -264,6 +264,17 @@ Not all evidence is equal. When claims conflict, higher-tier evidence wins:
 - "No studies show X is harmful" can mean "studies show X is safe" OR "nobody studied X."
   These are radically different.
 
+### 2.5 Symmetric Investigation Check (MANDATORY for comparisons)
+
+When claiming A is better/worse than B, verify you investigated both sides to the same depth.
+If you found negative evidence about A, did you also search for negative evidence about B?
+Asymmetric investigation masquerades as evidence — "I found problems with A" feels like "B is
+better" but only means "I looked harder at A."
+
+**Test:** List the searches/checks you ran for each side. If the lists aren't roughly equal in
+depth and adversarial intent, your comparison is contaminated by investigation asymmetry, not
+supported by evidence.
+
 ---
 
 ## PHASE 3: REASONING HYGIENE
