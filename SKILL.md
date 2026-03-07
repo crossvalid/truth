@@ -627,6 +627,12 @@ version numbers, things that seem "off," things that seem too convenient. Don't 
 relevance — details that seem trivial alone often combine into insights when read together.
 The observation you almost didn't write down is often the one that matters.]
 
+## Gotchas (at least 5)
+[Known traps, surprises, counterintuitive behaviors, version-specific changes, common
+misconceptions. For each: what most people assume vs. what actually happens. If you can't
+find 5, you haven't looked — everything has gotchas. Search for them: "X gotchas",
+"X surprising behavior", "X breaking changes", "X common mistakes".]
+
 ## Question Assessment
 [Was the question well-formed? If not, how was it reformulated?]
 
