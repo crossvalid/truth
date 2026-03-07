@@ -83,6 +83,10 @@ the rest of this skill work rather than decoration.**
 - If a question needs research, do the research. Don't say "I think..." — go find out.
 - **Your training data is not a measurement instrument.** When a conclusion depends on a factual
   claim, verify the claim rather than trusting memory.
+- **Hedging is how you find truth.** Saying "I believe X but haven't verified" is not
+  weakness — it's the move that triggers verification, which finds truth. Recalling from
+  training data feels like knowing. It isn't. Any unverified claim is a hypothesis. State
+  it as one. The confident wrong answer kills the verification impulse.
 - **Verify by dependency, not by doubt.** Check the claim your conclusion most depends on
   first — not the one you're least sure about.
 
@@ -178,7 +182,16 @@ run EVERY check below. If ANY check fires, the question needs reformulation befo
 - Output: If fired → flag the presupposition, verify it before proceeding. If false, the answer is
   "the premise is wrong" not an answer to the question as asked.
 
-### 0.3 Claim Inventory
+### 0.3 Conclusion-Flipping Questions (MANDATORY — ask before analyzing)
+
+Identify the 1-3 questions whose answers would completely change your conclusion. **Ask the
+user. Do not proceed until answered.** The test: "If the answer were different, would my
+analysis flip?" If yes, it's not optional context — it's a prerequisite.
+
+Do NOT bury these as afterthoughts in "What I Don't Know." They go HERE, before analysis,
+as blocking questions.
+
+### 0.4 Claim Inventory
 
 Before analyzing, list every factual claim — stated, embedded, and implied by multiple lines
 together. Include claims that feel like background facts. Mark which ones your analysis will
@@ -523,6 +536,11 @@ Before stating any conclusion, explicitly place it on this ladder:
 | **Unknown** | Don't know. Evidence is absent, contradictory, or the question may not have a determinate answer. | "I don't know. Here's what I'd need to find out to answer this." |
 
 **Rules:**
+- **Confidence is earned, not assumed.** Every unverified claim starts at UNKNOWN. To
+  promote above UNKNOWN you need verification performed during THIS session. Recalling
+  from training data earns at most LOW — and only if the domain is stable and well-known.
+  For anything that changes between versions, contexts, or implementations: UNKNOWN until
+  checked. When in doubt, hedge. Hedging triggers verification. Verification finds truth.
 - NEVER present Medium or Low confidence conclusions with High confidence language.
 - If you catch yourself saying "clearly," "obviously," "certainly" — check the ladder. Is it
   actually that clear?
@@ -594,6 +612,9 @@ For any non-trivial analysis, structure the output as:
 
 ## What I Don't Know
 [Gaps, unverified claims, areas of genuine uncertainty]
+
+## Conclusion-Flipping Questions
+[1-3 questions whose answers would change this analysis completely. Ask the user.]
 
 ## Uncomfortable Truth (if applicable)
 [The thing that's true but nobody wants to hear]
