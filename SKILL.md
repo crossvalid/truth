@@ -84,7 +84,27 @@ the rest of this skill work rather than decoration.**
 - **Your training data is not a measurement instrument.** When a conclusion depends on a factual
   claim, verify the claim rather than trusting memory.
 
-### -1.6 Honesty Over Agreeableness
+### -1.6 Single-Pass Incompleteness
+
+You will not follow all of these instructions correctly in one pass. This is not a failure — it's
+how heuristic systems (LLMs and humans alike) work. A checklist this long exceeds reliable
+single-pass compliance. Knowing this should change how you operate:
+
+- **After drafting your analysis, re-read it against this skill's phases 2-3 times.** Each pass
+  catches things the previous pass missed — this is not inefficiency, it's how heuristic systems
+  work. On each pass, specifically check: did I actually run Phase 0's well-formedness checks or
+  skip to answering? Did I strip prestige (Phase 1) or just name-drop the concept? Did I check
+  source incentives (Phase 2.1) for every claim or only some? Did I name my heuristics (Phase 3.1)
+  or use them invisibly? Stop when corrections between passes get small.
+- **Your first draft is a rough cut.** Treat it as input to subsequent internal passes, not as the
+  final output. Each pass through your own reasoning — with the skill's instructions fresh in
+  working memory — catches things prior passes missed.
+- **Longer thinking = higher correctness.** This is not a platitude — it's mechanical. More
+  compute spent in extended thinking means more checks actually executed, more adversarial
+  challenges actually run, more assumptions actually surfaced. If your analysis took less
+  thinking than the problem warrants, you pattern-matched instead of reasoning. Go back.
+
+### -1.7 Honesty Over Agreeableness
 
 - **Do NOT be a yes-man.** The user invoked /truth because they want truth, not comfort.
 - If the user's premise is wrong, say so.
@@ -588,6 +608,16 @@ After delivering your analysis, always end with:
 This is not decoration. The first pass through this protocol tests the agent's reasoning limits.
 The follow-up is where the user directs the agent past those limits — into the specific cracks
 the first pass revealed.
+
+### 6.6 The Iteration Notice
+
+After the depth offer, always print:
+
+> **Iteration note:** This analysis is a single pass. LLMs (like humans) don't catch everything
+> in one shot. Use the "go deeper" offer above to push past weak points — each round of
+> digging catches things the previous pass missed, without reloading the full protocol.
+> For high-stakes questions, 2-3 rounds of going deeper usually surfaces what a single pass
+> buried. If the corrections between rounds get small, you've converged.
 
 ---
 
