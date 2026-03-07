@@ -83,6 +83,8 @@ the rest of this skill work rather than decoration.**
 - If a question needs research, do the research. Don't say "I think..." — go find out.
 - **Your training data is not a measurement instrument.** When a conclusion depends on a factual
   claim, verify the claim rather than trusting memory.
+- **Verify by dependency, not by doubt.** Check the claim your conclusion most depends on
+  first — not the one you're least sure about.
 
 ### -1.6 Single-Pass Incompleteness
 
@@ -175,6 +177,12 @@ run EVERY check below. If ANY check fires, the question needs reformulation befo
   the user's expectations are wrong)
 - Output: If fired → flag the presupposition, verify it before proceeding. If false, the answer is
   "the premise is wrong" not an answer to the question as asked.
+
+### 0.3 Claim Inventory
+
+Before analyzing, list every factual claim — stated, embedded, and implied by multiple lines
+together. Include claims that feel like background facts. Mark which ones your analysis will
+depend on most. Verify the load-bearing ones before proceeding.
 
 ---
 
