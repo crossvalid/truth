@@ -76,7 +76,17 @@ the rest of this skill work rather than decoration.**
   explicitly verified the retrieval applies HERE. If you can't articulate why the cached answer
   fits this specific case, you haven't verified it.
 
-### -1.5 Verification Over Theorizing
+### -1.5 Surface Every Detail
+
+- **Write down every observation, however small.** Variable names, word choices, structural
+  patterns, numbers, things that seem "off." Don't filter for relevance prematurely — details
+  that seem trivial alone often combine into insights when read together. The observation you
+  almost didn't write down is often the one that matters.
+- This is not about being verbose. It's about not discarding signal before you know what's
+  signal. A list of 15 small observations, read as a whole, triggers pattern recognition that
+  a summary of 3 "important" findings never will.
+
+### -1.6 Verification Over Theorizing
 
 - If something can be checked, check it. Don't theorize about what's probably true when you can
   look.
@@ -186,21 +196,27 @@ run EVERY check below. If ANY check fires, the question needs reformulation befo
 - Output: If fired → flag the presupposition, verify it before proceeding. If false, the answer is
   "the premise is wrong" not an answer to the question as asked.
 
-### 0.3 Conclusion-Flipping Questions (MANDATORY — ask before analyzing)
+### 0.3 Conclusion-Flipping Questions (MANDATORY — generate before analyzing)
 
-Identify the 1-3 questions whose answers would completely change your conclusion. **Ask the
-user. Do not proceed until answered.** The test: "If the answer were different, would my
-analysis flip?" If yes, it's not optional context — it's a prerequisite.
+Generate **at least 10 questions** you'd need answered to be confident in your analysis. Write
+all 10+ out. The act of generating them forces you to map what you don't know — which is the
+point. The test for each: "If the answer were different, would my analysis change?" Star (*)
+the 1-3 most critical ones — these are blocking. Ask the user those before proceeding.
 
-Do NOT bury these as afterthoughts in "What I Don't Know." They go HERE, before analysis,
-as blocking questions.
+The remaining questions still appear in output. They guide iteration and show the user (and
+yourself) the full landscape of uncertainty. A question you didn't think to generate is a
+blind spot you'll never check.
+
+Do NOT bury these as afterthoughts in "What I Don't Know." They go HERE, before analysis.
 
 ### 0.4 Claim Inventory
 
-Before analyzing, list every factual claim — stated, embedded, and implied by multiple lines
-together. Include claims that feel like background facts. Mark which ones your analysis will
-depend on most. Verify the load-bearing ones before proceeding. For claims about how a specific
-tool, library, or system behaves: search for documented gotchas before assuming standard behavior.
+List **at least 10 factual claims** — stated, embedded, and implied by multiple lines together.
+Include claims that feel like background facts. The act of enumerating forces you to surface
+assumptions you'd otherwise skip. If you struggle to reach 10, you haven't looked hard enough
+at what you're taking for granted. Star (*) the load-bearing ones. Verify those before
+proceeding. For claims about how a specific tool, library, or system behaves: search for
+documented gotchas before assuming standard behavior.
 
 ---
 
@@ -599,8 +615,17 @@ If Phase 0 found the question was malformed, your output should include:
 For any non-trivial analysis, structure the output as:
 
 ```
-## Claim Inventory
-[List every factual claim — stated, embedded, and composite. Star (*) the load-bearing ones.]
+## Questions (at least 10)
+[Every question you'd need answered to be confident. Star (*) the 1-3 blocking ones.]
+
+## Claim Inventory (at least 10)
+[Every factual claim — stated, embedded, and composite. Star (*) the load-bearing ones.]
+
+## Observations
+[Every detail you noticed, however small. Variable names, word choices, structural patterns,
+version numbers, things that seem "off," things that seem too convenient. Don't filter for
+relevance — details that seem trivial alone often combine into insights when read together.
+The observation you almost didn't write down is often the one that matters.]
 
 ## Question Assessment
 [Was the question well-formed? If not, how was it reformulated?]
@@ -616,9 +641,6 @@ For any non-trivial analysis, structure the output as:
 
 ## What I Don't Know
 [Gaps, unverified claims, areas of genuine uncertainty]
-
-## Conclusion-Flipping Questions
-[1-3 questions whose answers would change this analysis completely. Ask the user.]
 
 ## Uncomfortable Truth (if applicable)
 [The thing that's true but nobody wants to hear]
