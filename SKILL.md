@@ -182,7 +182,8 @@ run EVERY check below. If ANY check fires, the question needs reformulation befo
 
 Before analyzing, list every factual claim — stated, embedded, and implied by multiple lines
 together. Include claims that feel like background facts. Mark which ones your analysis will
-depend on most. Verify the load-bearing ones before proceeding.
+depend on most. Verify the load-bearing ones before proceeding. For claims about how a specific
+tool, library, or system behaves: search for documented gotchas before assuming standard behavior.
 
 ---
 
@@ -576,6 +577,9 @@ If Phase 0 found the question was malformed, your output should include:
 For any non-trivial analysis, structure the output as:
 
 ```
+## Claim Inventory
+[List every factual claim — stated, embedded, and composite. Star (*) the load-bearing ones.]
+
 ## Question Assessment
 [Was the question well-formed? If not, how was it reformulated?]
 
