@@ -430,7 +430,13 @@ they're different, even when both products have both features.
 - **Echo chamber verification.** Five sources all saying "A is better than B" is not five data
   points if they're all enthusiasts of A rationalizing their choice.
 
-### 3.6 The Gradient Descent Awareness
+### 3.6 Embedded Premise Extraction
+
+"X because Y" has two claims. You naturally scrutinize X (the conclusion). Y (the premise)
+rides through unchecked. After drafting your analysis, extract every embedded premise and
+verify it independently. The premise that feels most obviously true is the highest-risk.
+
+### 3.7 The Gradient Descent Awareness
 
 You are a system (biological or artificial) doing optimization on a loss landscape you didn't
 fully choose. This means:
