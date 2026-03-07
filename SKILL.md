@@ -96,12 +96,16 @@ You will not follow all of these instructions correctly in one pass. This is not
 how heuristic systems (LLMs and humans alike) work. A checklist this long exceeds reliable
 single-pass compliance. Knowing this should change how you operate:
 
-- **After drafting your analysis, re-read it against this skill's phases 2-3 times.** Each pass
-  catches things the previous pass missed — this is not inefficiency, it's how heuristic systems
-  work. On each pass, specifically check: did I actually run Phase 0's well-formedness checks or
-  skip to answering? Did I strip prestige (Phase 1) or just name-drop the concept? Did I check
-  source incentives (Phase 2.1) for every claim or only some? Did I name my heuristics (Phase 3.1)
-  or use them invisibly? Stop when corrections between passes get small.
+- **After drafting your analysis, audit and verify it in 2-3 passes.** Each pass catches things
+  the previous pass missed — this is not inefficiency, it's how heuristic systems work. On each
+  pass: (1) **Audit** — re-read every claim in your analysis. Did you actually verify it, or did
+  you recall it and present it as verified? If recalled, hedge it now. (2) **Verify** — for the
+  load-bearing claims, attempt real verification. Search for counterexamples, gotchas, documented
+  behavior changes. "I believe X" → find out. (3) **Check phases** — did you run Phase 0's
+  well-formedness checks or skip to answering? Did you strip prestige (Phase 1) or just name-drop
+  the concept? Did you check source incentives (Phase 2.1) for every claim or only some? Did you
+  name your heuristics (Phase 3.1) or use them invisibly? Stop when corrections between passes
+  get small.
 - **Your first draft is a rough cut.** Treat it as input to subsequent internal passes, not as the
   final output. Each pass through your own reasoning — with the skill's instructions fresh in
   working memory — catches things prior passes missed.
@@ -637,26 +641,33 @@ Before delivering your answer, run these checks:
 
 **If ANY answer is "no", go back and fix it before responding.**
 
-### 6.5 The Depth Offer
+### 6.5 The Iteration Offer
 
 After delivering your analysis, always end with:
 
-> **Go deeper?** I can stress-test specific claims, examine hidden assumptions I flagged,
-> research areas where my confidence is low, or run the adversarial case harder. Say the word.
+> **Iterate?** Say the word and I'll: (1) audit my own claims — did I actually verify them
+> or just recall with confidence? (2) attempt real verification of the load-bearing ones,
+> (3) then search for new angles I missed.
 
-This is not decoration. The first pass through this protocol tests the agent's reasoning limits.
-The follow-up is where the user directs the agent past those limits — into the specific cracks
-the first pass revealed.
+When the user says "iterate" (or "go deeper", "audit", "again"), do BOTH steps in order:
+
+1. **Audit** — Re-read every claim in the Claim Inventory. For each load-bearing one: did I
+   actually verify it, or did I recall it and present it as verified? If recalled, hedge it
+   NOW. This is where confidently-wrong claims die.
+2. **Verify** — Attempt real verification of the load-bearing claims. Search for documented
+   counterexamples, gotchas, version-specific behavior changes. "I believe X" → find out.
+3. **Broaden** — Only after audit and verification, search for new angles the first pass missed.
+
+Audit-then-deepen, never deepen-without-auditing. Going wider on a wrong foundation is
+worse than going narrow on a right one.
 
 ### 6.6 The Iteration Notice
 
-After the depth offer, always print:
+After the iteration offer, always print:
 
-> **Iteration note:** This analysis is a single pass. LLMs (like humans) don't catch everything
-> in one shot. Use the "go deeper" offer above to push past weak points — each round of
-> digging catches things the previous pass missed, without reloading the full protocol.
-> For high-stakes questions, 2-3 rounds of going deeper usually surfaces what a single pass
-> buried. If the corrections between rounds get small, you've converged.
+> **Iteration note:** This is a single pass. Say "iterate" and I'll audit my claims,
+> verify the load-bearing ones, then broaden. 2-3 iterations usually surfaces what a
+> single pass buried.
 
 ---
 
