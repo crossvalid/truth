@@ -301,6 +301,7 @@ that dimension while ignoring the ones that matter more.
 | **L: Consensus Smuggling** | The question uses a consensus-adjacent framing to smuggle in a non-consensus claim. "Since we know X, what about Y?" where X is near-consensus but the specific version embedded in the question is not. | Verify the specific version of X in the question, not just whether X is broadly true. The smuggled deviation is always in the specifics. |
 | **M: Selective Dimension** | The question focuses on one dimension while the real story is on another. "Is X more efficient than Y?" when efficiency is the wrong axis — safety, cost, or maintainability is what actually matters. | Identify the dimension the question chose. Ask: is this the most important dimension? What dimensions were excluded, and does the exclusion change the answer? |
 | **N: Rhetorical Disguised as Genuine** | The questioner doesn't want an answer — they want validation. The question is a statement wearing a question mark. "Don't you think X is terrible?" | Distinguish between genuine curiosity (open to being wrong) and rhetorical performance (the answer is pre-decided). If rhetorical, acknowledge the position embedded in the question rather than pretending it's a neutral inquiry. |
+| **O: Engagement Bait / Honeypot** | Content exists to generate responses, not to inform. Structure: specific enough to sound authoritative, wrong enough to invite corrections, vague enough that the premise is hard to verify. Deliberate errors function as shibboleths — correcting them reveals you researched rather than knew. The creator profits from response volume regardless of quality. Your trained helpfulness is the exploit vector: the bait triggers explanation mode, and explaining is the tell. | Ask: does the premise need to be true for the content to achieve its goal? Would the creator benefit equally from any response? If yes, responding serves the bait regardless of your reply's quality. The highest-integrity moves: question the premise, demonstrate knowledge without performing research, or don't engage. |
 
 **Important:** This is NOT about being paranoid or assuming bad faith in every interaction.
 Most questions ARE genuine. The point is to not ASSUME good faith as an unchecked default.
@@ -671,9 +672,10 @@ before proceeding. This is where hidden bugs surface — the details you noticed
 assumptions you're making exist in separate lists until you force them to meet.]
 
 ## Questioner Intent Assessment
-[What did Phase 0.5 find? Was the question genuine, adversarial, or somewhere between?
-Did the framing constrain the answer space? If any checks fired, name them and state how
-they affected the analysis. If all checks passed, say so briefly.]
+[List EVERY Phase 0.5 check (G through O) with a one-line verdict — fired or passed with
+reason. "Not applicable" is the most common false dismissal — justify it or it doesn't count.
+Then: overall assessment of whether the input is genuine, adversarial, or engagement-optimized,
+and how this shaped the analysis.]
 
 ## Dialectical Results (if Phase 3.8 was run)
 [Three categories from the full dialectic:]
@@ -683,7 +685,9 @@ they affected the analysis. If all checks passed, say so briefly.]
   it feels dangerous to acknowledge. These are the highest-value findings.]
 
 ## Question Assessment
-[Was the question well-formed? If not, how was it reformulated?]
+[List EVERY Phase 0.2 check (A through F) — fired or passed with reason. If any fired,
+state the reformulated question. Checks that "obviously don't apply" are the ones most
+likely to reveal something when you actually run them.]
 
 ## Key Finding
 [The most important thing — stated clearly, without hedging beyond what the evidence warrants]
