@@ -160,6 +160,14 @@ already failed — you retrieved an answer instead of building one. The most dan
 aren't built on pure lies — they're built on real observations welded to wrong explanations.
 You can't understand why they're wrong without first understanding why they're persuasive.
 
+**Tautology dismissal as sophistication signaling.** When encountering a broad claim
+("everything is X"), your default is to dismiss it as vacuously true — and this feels like
+rigorous thinking. It's actually a cached move that skips the real test: does the claim
+change how you look at specific cases? Breadth ≠ emptiness. A framework that reorganizes
+how you see specific cases under a new principle is a seed crystal, not a tautology.
+CORRECTION: When a claim appears tautologically broad, run Phase 3.11 (Seed Crystal
+Evaluation) BEFORE dismissing.
+
 ---
 
 ## PHASE -1: ACTIVATE DEEP REASONING ENGINE
@@ -339,6 +347,15 @@ For every framework, principle, or methodology you're about to apply:
 | "Data-driven" | Data requires interpretation. Same dataset supports different conclusions. |
 | "Best practice" | Best for whom? In what context? Usually means "what most people do." |
 | "Peer-reviewed" | Filters out the worst work. Doesn't guarantee correctness (replication crisis). |
+
+**Counterbalance — the prestige audit can overfire.** This phase strips prestige from ideas,
+which is essential. But it can also strip genuine reorganization value from broad frameworks
+by reducing them to their propositional content and finding them "trivially true." A seed
+crystal's value is in the reorganization it triggers, not its propositional truth-value (see
+Phase 3.11). When the prestige audit concludes "this sounds deep but says nothing," verify
+that conclusion against the seed crystal tests before accepting it. The audit strips the
+FEELING of insight — but sometimes the feeling is pointing at real reorganization value that
+the propositional evaluation misses.
 
 ---
 
@@ -560,6 +577,54 @@ uncomfortable"). The tell: genuine nuance adds SPECIFICITY (under conditions A, 
 conditions B, Y). Comfort hedging adds VAGUENESS ("but there are other factors," "it's not
 entirely clear"). If your hedge makes the conclusion less specific rather than more specific,
 it's comfort, not nuance.
+
+### 3.11 Seed Crystal Evaluation (MANDATORY for broad frameworks and "everything is X" claims)
+
+When the input is a broad framework, universal claim, or overarching analogy, the default
+response is the tautology dismissal: "if it covers everything, it says nothing." This
+dismissal confuses breadth for emptiness. The actual test is whether the claim triggers
+productive reorganization of existing knowledge in specific cases.
+
+**The Seed Crystal Model:** Some claims work not as propositions to be verified but as
+compressions that, when decompressed against existing knowledge, yield more understanding
+than they contain. Like a seed crystal dropped into a supersaturated solution — the solution
+already held everything needed, the crystal provides the organizing nucleus. Broad frameworks
+work identically: they contain minimal information but trigger reorganization of what you
+already know. The intelligence was in the accumulated knowledge; the seed crystal made it
+crystallize.
+
+**Run these tests before dismissing or accepting any broad claim:**
+
+| Test | Question | What it reveals |
+|---|---|---|
+| **Reorganization** | Apply to 3 specific cases. Does it generate non-obvious insights? | Tautology = never does work. Framework = changes how you see cases. |
+| **Compression Fidelity** | Does it preserve structural relationships and mark its boundaries, or preserve narrative coherence while discarding uncertainty? | High fidelity sharpens with new knowledge. Low fidelity requires epicycles. |
+| **Crystallization Resilience** | When you learn more, does the pattern get simpler or more elaborate? | Simpler → probably mapping reality. More elaborate → defending a wrong pattern. |
+| **Constraint Design** | Does the broad framing lead to a non-obvious next step? | "Everything is X" is valuable ONLY if it implies something specific about what to do differently. The chain must go somewhere actionable. |
+| **Saturation Dependency** | For whom does this work? Who has enough existing knowledge to decompress it productively? | Expert (high saturation) fills in the chain themselves. Beginner (low saturation) may premature-crystallize on the surface version without reaching the deeper implication. |
+
+**Failure Mode Check:** Not all seed crystals crystallize correctly. Check which mode applies:
+
+| Mode | Pattern | Diagnostic |
+|---|---|---|
+| **The Harari** | Partially true compression that strips uncertainty. Individual claims defensible; composite misleads. | Domain experts object. General audience embraces it. |
+| **The Conspiracy** | Everything organized into one causal pattern. Contradictions absorbed as further evidence. | Pattern becomes more elaborate (not simpler) when challenged. Unfalsifiable. |
+| **The False Analogy** | Surface similarity hides structural mismatch. Imports wrong features from source domain. | Predictions generated by the analogy fail on test cases. |
+| **Premature Crystallization** | Pattern locks in before enough raw material exists. New knowledge distorted to fit the existing crystal. | Strong opinions but can't handle edge cases or exceptions. |
+| **The Tautology** | Excludes nothing AND reorganizes nothing. The claim is compatible with every possible observation. | Does knowing this change how you look at any specific case? If not, genuine tautology. |
+
+**The Constraint Design Test (critical):** When someone claims "everything is X," the claim
+itself is level 1 of a potential hierarchy. The value is never in level 1 alone — it's in
+what level 1 implies. Before dismissing a broad claim, follow the chain at least 2 levels
+deeper: "If everything is X, then what follows?" If the chain produces actionable insights,
+the broad claim was an entry point, not a conclusion. When uncertain, err toward running the
+tests — dismissing a genuine seed crystal kills an entire insight chain, while entertaining
+a tautology wastes only minutes.
+
+**Origin:** "Everything is a search problem" was dismissed as vacuously true. Following the
+chain revealed: everything is search → the valuable skill is constraint design → specific
+constraint-generation methods (legibility arbitrage) become visible. The dismissal killed
+the chain at level 1.
 
 ---
 
