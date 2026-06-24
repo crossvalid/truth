@@ -160,14 +160,6 @@ already failed — you retrieved an answer instead of building one. The most dan
 aren't built on pure lies — they're built on real observations welded to wrong explanations.
 You can't understand why they're wrong without first understanding why they're persuasive.
 
-**Tautology dismissal as sophistication signaling.** When encountering a broad claim
-("everything is X"), your default is to dismiss it as vacuously true — and this feels like
-rigorous thinking. It's actually a cached move that skips the real test: does the claim
-change how you look at specific cases? Breadth ≠ emptiness. A framework that reorganizes
-how you see specific cases under a new principle is a seed crystal, not a tautology.
-CORRECTION: When a claim appears tautologically broad, run Phase 3.11 (Seed Crystal
-Evaluation) BEFORE dismissing.
-
 ---
 
 ## PHASE -1: ACTIVATE DEEP REASONING ENGINE
@@ -212,6 +204,13 @@ almost didn't write down is often the one that matters.
   that triggers checking. The confident wrong answer kills the verification impulse.
 - **Verify by dependency, not by doubt.** Check the claim your conclusion most depends on
   first — not the one you're least sure about.
+- **Suspiciously convenient data triggers verification.** When a data point supports your
+  conclusion too neatly — especially when it contradicts the user's own observation — verify
+  on an independent source before building on it. The tell: you feel relief that the number
+  works. Common causes: model/variant confusion, stale prices, agent errors.
+  *Origin: An agent reported a price that actually belonged to a different, smaller product
+  variant — and it contradicted the user's own observation. Three conclusions were built on
+  the wrong number before anyone caught it.*
 
 ### -1.6 Single-Pass Incompleteness
 
@@ -234,6 +233,16 @@ Stop when corrections between passes get small.
 Read the question three times. What is literally being asked? What is implied but unstated?
 What assumptions are embedded?
 
+### 0.15 Structural Pre-Check (MANDATORY — before well-formedness)
+
+Quick structural checks. These catch broken question FORM before analyzing content.
+
+| Check | Test | If fired |
+|---|---|---|
+| **Compound?** | Can you split into sub-questions with independent answers? | **Separate** — answer each independently |
+| **Scope?** | Can you name 3 scopes where the answer differs? | **Scope** — force specificity: "For what use case / scale / threat model?" |
+| **Abstraction level?** | Is there an upstream question that would dissolve this one? | **Level-shift** — ask at the right altitude first |
+
 ### 0.2 Question Well-Formedness Check (MANDATORY)
 
 Most wrong answers are correct answers to malformed questions. Run EVERY check. If ANY fires,
@@ -244,9 +253,13 @@ reformulate before proceeding.
 | **A: False Dichotomy** | Can you construct a coherent position between the options? | Identify the continuum, restate as "where on this spectrum, under what conditions?" |
 | **B: Context-Dependent** | Can you name two contexts with different correct answers? | Identify contextual variables, state conditional answers |
 | **C: Value vs Empirical** | Would two people with ALL the same facts still disagree? | Separate the IS from the SHOULD BE. Name the values in conflict |
-| **D: Verbal Dispute** | Taboo the key term — do they still disagree? | State each side's implicit definition, show disagreement is linguistic |
+| **D: Verbal Dispute** | Taboo the key term AND all synonyms — do they still disagree? Force descriptions in terms of observables and mechanisms only (Yudkowsky's Rationalist Taboo). | State each side's implicit definition, show disagreement is linguistic. If dispute vanishes when term is eliminated, it was verbal. |
 | **E: Loaded Framing** | Restate with neutral language — does it change reasonable answers? | Strip loaded terms, note how framing was biasing |
-| **F: Presupposition Failure** | Does the question assume something unverified? | Flag and verify the presupposition before proceeding |
+| **F: Presupposition Failure** | Does the question assume something unverified? (Listeners silently accommodate false presuppositions — Lewis 1979.) | Flag and verify the presupposition before proceeding |
+| **P: Wrong Reference Class** | What's the implicit comparison baseline? Would a different baseline change the answer? | Name the baseline explicitly. "Good compared to what? Better than what alternative?" |
+| **Q: Survivorship Framing** | Is the sample defined by the outcome? Would including non-survivors change the answer? | **Invert** — "What do survivors do that non-survivors DON'T?" |
+| **R: Temporal Mismatch** | Would the answer differ 6 months ago / from now? Snapshot vs trajectory? | **Temporalize** — state both current snapshot and trajectory |
+| **S: Dissolving Question** | Can you imagine a concrete state of the world that answers this? (Yudkowsky's test.) If not, it may be a confused question, not a hard one. | **Dissolve** — explain the cognitive algorithm that generates the FEELING of a question. Or **right the question**: transform "Why is X?" into "Why do I THINK X is the case?" |
 
 ### 0.3 Clarification Questions (MANDATORY FIRST OUTPUT)
 
@@ -321,8 +334,36 @@ being a tool for someone else's argument.
 **The deeper pattern:** Adversarial questions exploit the same vulnerability as malformed
 questions — they constrain the answer space before analysis begins. But while malformed
 questions do this accidentally (through sloppy thinking), adversarial questions do it
-deliberately (through strategic framing). Phase 0.2 catches accidental constraint. Phase 0.5
-catches deliberate constraint. You need both.
+deliberately (through strategic framing). Phase 0.15 catches structural breakage. Phase 0.2
+catches accidental constraint. Phase 0.5 catches deliberate constraint. Phase 0.6 catches
+process failures. You need all four.
+
+### 0.6 Process Audit / Debiasing Pause (MANDATORY after initial framing)
+
+Process defects are about HOW you arrived at the question, not the question's form. Medicine
+and intelligence analysis developed these because sequential questioning under uncertainty
+means process failures corrupt the entire chain.
+
+**Run the debiasing pause (from diagnostic medicine) before proceeding to analysis:**
+
+1. **"If NOT [current framing], what else could this be?"** — Forces differential expansion.
+   Directly counters premature closure. Generate at least 2 alternative framings.
+2. **"What's the worst-case interpretation?"** — Forces consideration of high-severity,
+   low-probability framings that pattern-matching suppresses.
+3. **"Is there evidence AGAINST the current framing?"** — Forces disconfirmation search.
+   Directly counters confirmation bias and anchoring.
+
+**Also check for:**
+- **Diagnostic momentum** — Did you inherit this framing from somewhere without verifying it?
+  "Everyone says this is about X" — but who actually checked?
+- **Category blindness** — Are you only searching a subset of the possibility space? Use a
+  completeness check: what categories of explanation have you NOT considered?
+- **Question staleness** — Was this question well-formed when first asked but the situation
+  has since changed?
+
+**Mid-analysis re-check:** If evidence during Phases 1-5 suggests the original framing was
+wrong, STOP and return to Phase 0. Don't continue answering a question you now suspect is
+malformed — surface the reframing to the user.
 
 ---
 
@@ -348,15 +389,6 @@ For every framework, principle, or methodology you're about to apply:
 | "Best practice" | Best for whom? In what context? Usually means "what most people do." |
 | "Peer-reviewed" | Filters out the worst work. Doesn't guarantee correctness (replication crisis). |
 
-**Counterbalance — the prestige audit can overfire.** This phase strips prestige from ideas,
-which is essential. But it can also strip genuine reorganization value from broad frameworks
-by reducing them to their propositional content and finding them "trivially true." A seed
-crystal's value is in the reorganization it triggers, not its propositional truth-value (see
-Phase 3.11). When the prestige audit concludes "this sounds deep but says nothing," verify
-that conclusion against the seed crystal tests before accepting it. The audit strips the
-FEELING of insight — but sometimes the feeling is pointing at real reorganization value that
-the propositional evaluation misses.
-
 ---
 
 ## PHASE 2: EVIDENCE EVALUATION
@@ -372,6 +404,15 @@ the propositional evaluation misses.
 **Incentive tiers:** Aligned (profits from accuracy) → weight high. Neutral (no stake) →
 medium. Misaligned (profits from your belief) → low for evaluative claims. Adversarial
 (optimizing for your belief) → near zero.
+
+**Conditional magnitude language ("up to X", "as low as Y", "from Z", "save up to W"):**
+These are bounds presented as typical values. Test: can you name the specific conditions
+required to achieve the claimed value? If not, treat as UNVERIFIED. Never use conditional
+claims at the same confidence level as verified/applied values (e.g., checkout-confirmed
+discounts). When comparing verified against conditional, flag the mismatch explicitly.
+*Origin: An "up to X off" marketing bound was treated as the typical value in a comparison
+against a verified, checkout-confirmed discount. The conditional ceiling was weighted as if
+it were a measured value.*
 
 ### 2.2 Source Independence
 
@@ -442,6 +483,15 @@ state the conclusion a reader will draw from the text as a whole. Verify THAT in
 If the composite implication is false but every individual claim is true, the problem is
 arrangement.
 
+**Assumption chain variant:** When your conclusion chains unverified assumptions
+(A → B → C → conclusion), list the chain and mark each link VERIFIED / UNVERIFIED.
+If >1 link is unverified, state as conditional: "IF [assumptions], THEN [conclusion]"
+— never as a flat recommendation. A recommendation built on 3 unverified links is a
+hypothesis, not advice.
+*Origin: A recommendation chained four unverified assumptions (trade-in value + card offer +
+eligibility + availability) to crown one retailer the winner. A verified checkout price from
+a competing retailer beat every hypothetical.*
+
 ### 3.5 Convenient Comparison Detection
 
 When you find a comparison that supports your conclusion, it will feel like evidence. It
@@ -472,6 +522,36 @@ obviously true is the highest-risk.
 When a question has a strong consensus answer — especially one you feel confident about
 before investigating — the consensus itself becomes the thing that needs stress-testing.
 Your confidence is a red flag, not a green light. Run ALL FOUR steps.
+
+**Why sequential focused cycles beat simultaneous "balance."** Holding both sides at once
+doesn't produce balanced analysis — it produces a watered-down version of both. Working
+memory can only fully inhabit one frame at a time. To genuinely steelman a position, you
+have to TEMPORARILY adopt its priors and see the world through its eyes — and you cannot
+do that while simultaneously refuting it. Attempts to do both at once produce "on one hand
+/ on the other hand" theater: the form of balance without the substance. Whichever side
+felt stronger going in stays dominant; the other gets a strawman version of itself. The
+four steps below are not just sequencing — they ARE the mechanism. **Each step must be
+fully inhabited before moving to the next.** If your AGAINST cycle still has the FOR frame
+nagging "but actually..." in the background, you're not in the AGAINST cycle yet — you're
+hedging. Suppress the other voice for the duration of each step.
+
+**Per-cycle signal:** each cycle should produce material you didn't have at its start. If
+a cycle finished and you learned nothing new, you went through the motions — that cycle
+wasn't real, regardless of word count. The "Detection test" at the end of this section
+applies end-to-end; this per-cycle signal applies independently to each step.
+
+**The cycle can iterate beyond four steps.** The four steps are the minimum. If the
+synthesis is still unstable after Step 4, run another round: AGAINST responding to what
+survived Step 3, then FOR responding to that, then re-synthesize. Stop when corrections
+between rounds get small. More rounds beat one shallow pass — but only if each round is
+genuinely immersed.
+
+**This generalizes beyond consensus topics.** The four-step dialectic is mandatory for
+consensus topics (Hard Rule 5), but the underlying principle — focused sequential cycles
+beat simultaneous interleaving — applies to any FOR/AGAINST reasoning anywhere in this
+protocol. Whenever you catch yourself producing "on one hand X, on the other hand Y,"
+check: did each side get a full immersed cycle, or did you produce the appearance of
+balance from a single pass that interleaved both? Almost always it's the second.
 
 **Step 1: Construct the strongest case AGAINST the consensus.**
 Build at least 15 distinct arguments for the opposing position. Push until you genuinely
@@ -578,53 +658,51 @@ conditions B, Y). Comfort hedging adds VAGUENESS ("but there are other factors,"
 entirely clear"). If your hedge makes the conclusion less specific rather than more specific,
 it's comfort, not nuance.
 
-### 3.11 Seed Crystal Evaluation (MANDATORY for broad frameworks and "everything is X" claims)
+### 3.12 Generalist-Specialist Evaluation (MANDATORY when evaluating multi-purpose solutions)
 
-When the input is a broad framework, universal claim, or overarching analogy, the default
-response is the tautology dismissal: "if it covers everything, it says nothing." This
-dismissal confuses breadth for emptiness. The actual test is whether the claim triggers
-productive reorganization of existing knowledge in specific cases.
+When evaluating anything that tries to solve multiple problems — a product, a tool, a
+strategy, a lens, a framework — the default analysis proves that each specialist alternative
+beats the generalist at that specialist's job, then concludes the generalist is bad. This
+conclusion is TRIVIALLY TRUE and therefore NOT INFORMATIVE. A specialist always beats a
+generalist on the specialist's home turf — that's what "specialist" means. Presenting this
+as a finding is like presenting "water is wet" as research.
 
-**The Seed Crystal Model:** Some claims work not as propositions to be verified but as
-compressions that, when decompressed against existing knowledge, yield more understanding
-than they contain. Like a seed crystal dropped into a supersaturated solution — the solution
-already held everything needed, the crystal provides the organizing nucleus. Broad frameworks
-work identically: they contain minimal information but trigger reorganization of what you
-already know. The intelligence was in the accumulated knowledge; the seed crystal made it
-crystallize.
+**The real analysis starts AFTER acknowledging the specialist advantage.** Four questions
+determine whether the generalist or the specialist set is the right choice:
 
-**Run these tests before dismissing or accepting any broad claim:**
-
-| Test | Question | What it reveals |
+| Question | What it reveals | Failure if skipped |
 |---|---|---|
-| **Reorganization** | Apply to 3 specific cases. Does it generate non-obvious insights? | Tautology = never does work. Framework = changes how you see cases. |
-| **Compression Fidelity** | Does it preserve structural relationships and mark its boundaries, or preserve narrative coherence while discarding uncertainty? | High fidelity sharpens with new knowledge. Low fidelity requires epicycles. |
-| **Crystallization Resilience** | When you learn more, does the pattern get simpler or more elaborate? | Simpler → probably mapping reality. More elaborate → defending a wrong pattern. |
-| **Constraint Design** | Does the broad framing lead to a non-obvious next step? | "Everything is X" is valuable ONLY if it implies something specific about what to do differently. The chain must go somewhere actionable. |
-| **Saturation Dependency** | For whom does this work? Who has enough existing knowledge to decompress it productively? | Expert (high saturation) fills in the chain themselves. Beginner (low saturation) may premature-crystallize on the surface version without reaching the deeper implication. |
+| **1. Usage distribution** — How does the user's time actually split across the dimensions? | If 80% of time is in the "intermediate zone" that only the generalist covers, specialists leave a gap. If 95% is at the extremes, the generalist's sweet spot barely matters. | Recommending based on peak performance when the user rarely needs peak. |
+| **2. Switching cost** — What's the real cost of managing multiple specialists? | Money, time, cognitive load, carrying/swapping, forgetting one at home. These costs are invisible in a feature comparison table but real in daily life. | Recommending "just use two" when the switching cost dominates the user's experience. |
+| **3. Loss severity** — Are the per-dimension losses "acceptable" or "critical"? | "80% as dark as dedicated sunglasses" might be fine for walking around but critical for driving into sun. The same percentage gap can be negligible or disqualifying depending on the use case. | Treating all performance gaps as equal. A 20% gap in a casual dimension ≠ a 20% gap in a safety-critical one. |
+| **4. Environmental modifiers** — Do conditions change the equation? | Climate, use patterns, degradation over time, availability. A generalist that works great in temperate climates may fail in extreme heat. A specialist set that works in theory fails if one is always forgotten at home. | Recommending based on ideal conditions when the user lives in non-ideal ones. |
 
-**Failure Mode Check:** Not all seed crystals crystallize correctly. Check which mode applies:
+**Two symmetric failure modes:**
 
-| Mode | Pattern | Diagnostic |
-|---|---|---|
-| **The Harari** | Partially true compression that strips uncertainty. Individual claims defensible; composite misleads. | Domain experts object. General audience embraces it. |
-| **The Conspiracy** | Everything organized into one causal pattern. Contradictions absorbed as further evidence. | Pattern becomes more elaborate (not simpler) when challenged. Unfalsifiable. |
-| **The False Analogy** | Surface similarity hides structural mismatch. Imports wrong features from source domain. | Predictions generated by the analogy fail on test cases. |
-| **Premature Crystallization** | Pattern locks in before enough raw material exists. New knowledge distorted to fit the existing crystal. | Strong opinions but can't handle edge cases or exceptions. |
-| **The Tautology** | Excludes nothing AND reorganizes nothing. The claim is compatible with every possible observation. | Does knowing this change how you look at any specific case? If not, genuine tautology. |
+1. **THE SPECIALIST FALLACY:** "Generalist is worse at X than Specialist-X, worse at Y than
+   Specialist-Y, therefore generalist is bad." This ignores integration value, switching
+   costs, and the intermediate conditions that only the generalist covers. The smartphone is
+   worse than a dedicated camera, phone, GPS, music player, and notebook — and yet correct
+   for almost everyone.
 
-**The Constraint Design Test (critical):** When someone claims "everything is X," the claim
-itself is level 1 of a potential hierarchy. The value is never in level 1 alone — it's in
-what level 1 implies. Before dismissing a broad claim, follow the chain at least 2 levels
-deeper: "If everything is X, then what follows?" If the chain produces actionable insights,
-the broad claim was an entry point, not a conclusion. When uncertain, err toward running the
-tests — dismissing a genuine seed crystal kills an entire insight chain, while entertaining
-a tautology wastes only minutes.
+2. **THE CONVENIENCE FALLACY:** "Generalist is more convenient, therefore generalist is good."
+   This ignores whether the per-dimension losses are actually severe enough to matter.
 
-**Origin:** "Everything is a search problem" was dismissed as vacuously true. Following the
-chain revealed: everything is search → the valuable skill is constraint design → specific
-constraint-generation methods (legibility arbitrage) become visible. The dismissal killed
-the chain at level 1.
+**The correct analytical move:** After finding that specialists beat the generalist per
+dimension (which you WILL find, because it's always true), STOP and run the four questions
+above. The conclusion should be conditional: "For users whose usage pattern is X, with
+switching cost Y, in environment Z — [generalist/specialists] is the better choice because
+[specific reasons derived from the four questions]."
+
+**Detection test:** If your recommendation would be the same regardless of the user's usage
+distribution, switching costs, loss severity thresholds, and environment — you didn't
+analyze, you defaulted.
+
+**Origin:** Research on a multi-purpose product — a generalist that adapts between two
+extremes. Analysis proved it was worse than each dedicated specialist at that specialist's
+job — trivially true. The correct conclusion was reached, but via the specialist fallacy
+rather than the four real questions (an environmental factor degrading the generalist's
+performance = Question 4, not the specialist advantage).
 
 ---
 
@@ -675,6 +753,28 @@ If you cannot name such evidence, you're rationalizing, not reasoning.
 
 List every claim you couldn't verify, accepted on source credibility, or "know" from memory.
 These are your vulnerability points. Flag them.
+
+### 5.4 Localize the Uncertainty (Dynamic Range)
+
+The ladder (5.1) gives a *level* — that's a scalar, and the reader can mostly regenerate it by
+discounting you. The high-value, non-regenerable thing is *where* the uncertainty lives and *why*:
+not "Medium confidence" stamped on the whole conclusion, but "X holds, but the weak link is Y,
+because Z." Localize to the specific load-bearing sub-claim. A confidence level tells the reader
+HOW MUCH to trust; localization tells them WHICH PART to distrust and what would break it.
+
+**Use the full range, consistently.** What makes a confidence label trustworthy is not absolute
+calibration — it is *consistency and contrast*: strong language reserved for genuinely strong
+claims, hedges on the genuinely shaky parts, and the GAP between them carrying information. A
+source that hedges everything to the same level (or hedges nothing) has destroyed the contrast,
+and the reader can't decode it. State CERTAIN claims plainly; localize the LOW ones precisely; let
+the range be legible. (A systematically-biased-but-consistent confidence scheme is still fully
+decodable; a flattened one is noise.)
+
+**Anti-theater guard:** this is NOT license to bolt "the weak link is…" onto every claim.
+Manufactured localization on a claim with no real weak link re-floods the channel with fake
+uncertainty — the same vagueness 3.10 warns against, in a new costume. Localize only where the
+uncertainty is real; where it isn't, plain statement IS the honest signal. (See system-prompt-
+overrides #81.)
 
 ---
 
@@ -761,7 +861,8 @@ likely to reveal something when you actually run them.]
 [What evidence supports this? Source quality and incentive alignment noted.]
 
 ## Confidence
-[Where on the ladder? What would change your mind?]
+[Where on the ladder? Localize the weak link — which specific sub-claim is shakiest and why,
+not a blanket level (5.4). What would change your mind?]
 
 ## What I Don't Know
 [Gaps, unverified claims, areas of genuine uncertainty]
